@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        button{
+            color: rebeccapurple;
+            background-color: wheat;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+        h2{
+            color: lightgray;
+            background-color: black;
+            width: fit-content;
+            padding: 6px;
+            font-size: 1rem;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+     <h2>Task 1: Create a New Paragraph when clicked</h2>
+    <div id="container"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus assumenda deleniti, dolores sint in illo suscipit ab consectetur distinctio qui animi deserunt nulla voluptas est quas blanditiis adipisci voluptatum cupiditate!</p></div>
+    <button onclick="addParagraph()">CLICK THIS</button>
+    <hr>
+
+    <h2>Task 2: Remove the Last Element when clicked</h2>
+    <div id="remove-container">
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum atque, aut omnis tenetur laudantium, dolore recusandae exercitationem quas provident est? Quod voluptate earum reiciendis? Consequuntur delectus eveniet sed. Perferendis.</p>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae similique itaque facilis minus necessitatibus temporibus, ex distinctio earum quia non nostrum cum. Suscipit expedita illo neque atque mollitia consequatur!
+        Consequatur ea, optio blanditiis eveniet consectetur deleniti autem eos laborum, expedita dolor nihil voluptate a corrupti distinctio natus fugiat commodi! A libero sequi dicta, saepe enim eius odit asperiores qui?</p>
+    </div>
+    <button onclick="removeLastElement()">click to remove</button><hr>
+
+    <h2>Task 3:Toggles the presence of a box in container when clicked</h2>
+    <div id="box-container"></div>
+    <button onclick="toggleBox()">click for Box</button><hr>
+
+    <h2>Task 4: Change Button Text after clicked</h2>
+    <button onclick="changeButtonText(this)">Click button</button><hr>
+
+    <h2>Task 5: Create and Remove List Items after click</h2>
+    <ul id="list"></ul>
+    <button onclick="ListItems()">add Items</button>
+    <button onclick="removeListItem()">Remove Last Item</button><hr>
+
+
+
+</body>
+</html>
